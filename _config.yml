@@ -1,4 +1,4 @@
-title: 我的个人博客 
-description: GitHub Actions自动部署演示博客 
+title: My Blog 
+description: Github Pages Jekyll Blog 
 baseurl: "/my-blog-site" 
 theme: minima 
