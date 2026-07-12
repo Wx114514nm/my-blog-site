@@ -1,0 +1,4 @@
+title: 我的个人博客 
+description: GitHub Actions自动部署演示博客 
+baseurl: "/my-blog-site" 
+theme: minima 
