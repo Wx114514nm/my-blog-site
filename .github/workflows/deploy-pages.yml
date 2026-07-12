@@ -1,2 +1,20 @@
- 
-name: Deploy Blog to GitHub Pages 
+name: 页面构建与部署 
+on: 
+  push: 
+    branches: [ main ] 
+permissions: 
+  contents: read 
+  pages: write 
+  id-token: write 
+jobs: 
+  build-and-deploy: 
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Checkout code 
+        uses: actions/checkout@v4 
+      - name: Setup Pages 
+        uses: actions/configure-pages@v5 
+      - name: Build Jekyll site 
+        uses: actions/jekyll-build-pages@v1 
+      - name: Deploy to GitHub Pages 
+        uses: actions/deploy-pages@v4 
